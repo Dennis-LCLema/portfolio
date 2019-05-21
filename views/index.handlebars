@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+  </head>
+  
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <div class="navbar-brand">HOME</div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ 
+    <div id="about" class="parallax2 container-fluid">
+      <h1 id="box1" class="text-left name">About</h1>
+      <p class="col-sm-5 description">The name is Mayur and I'm an UX/UI designeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic interfaces.</p>
+    </div>
+
+    <div id="portfolio" class="parallax1 container-fluid">
+      <h1 id="box2" class="text-right name">Portfolio</h1>
+      <div class="row text-center" style="margin-top:100px">
+        <img src="" class="img-thumbnail" alt="Portfolio # 1" width="304" height="236">
+        <img src="" class="img-thumbnail" alt="Portfolio # 2" width="304" height="236">
+        <img src="" class="img-thumbnail" alt="Portfolio # 3" width="304" height="236">
+      </div>
+        <div class="row text-center" style="margin-top:10px"> 
+        <img src="" class="img-thumbnail" alt="Portfolio # 4" width="304" height="236">
+        <img src="" class="img-thumbnail" alt="Portfolio # 5" width="304" height="236">
+        <img src="" class="img-thumbnail" alt="Portfolio # 6" width="304" height="236">
+      </div>
+  </div>
+  
+    <div id="contact" class="parallax3 container-fluid">
+  <h2 id="box3" class="text-left name">Contact</h2>
+    <p>&nbsp;</p>
+    <p></p>
+          <p>&nbsp;</p>
+    <p></p>
+          <p>&nbsp;</p>
+    <p></p>
+  <div class="row">
+    <div class=" col-sm-6">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text"  style="opacity:0.6" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" style="opacity:0.6"  required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5" style="opacity:0.6" ></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-block pull-right" type="submit" style="background-color:white">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+  
+    <footer id="footer" class="container-fluid text-center">
+    <a href="https://www.facebook.com/" target="_blank"><i class="col-xs-offset-4 col-xs-1 fa fa-facebook-square" style="font-size:24px;color:white; margin-top:15px"></i></a>
+    <a href="https://www.linkedin.com/" target="_blank"><i class="col-xs-1 fa fa-linkedin" style="font-size:24px;color:white; margin-top:15px"></i></a>
+      
+    <a href="https://www.plus.google.com/" target="_blank"><i class="col-xs-1 fa fa-google-plus" style="font-size:24px;color:white; margin-top:15px"></i></a>
+     <a href="https://www.twitter.com/" target="_blank"><i class="col-xs-1 fa fa-twitter" style="font-size:24px;color:white; margin-top:15px"></i></a>
+  </footer>
+
+</body>
+</html>
